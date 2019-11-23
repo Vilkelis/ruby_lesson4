@@ -19,7 +19,7 @@ class Station
     if type.nil?
       @trains
     else
-      @trains.map { |e| e.type == type }
+      @trains.select { |e| e.type == type }
     end
   end
 end
